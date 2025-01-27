@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Traveling in Egypt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Marquee styling */
+        .marquee {
+            width: 100%;
+            background-color: #d83108; /* Black background for contrast */
+            color: #fff; /* White text color */
+            padding: 0%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .marquee p {
+            display: inline-block;
+            animation: scroll 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-200%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/second.jpg" alt="Egypt Logo">
+            </div>
+            <nav>
+                <div class="nav-buttons">
+                    <a href="index.html" class="nav-button">Home</a>
+                    <a href="discover.html" class="nav-button">Discover Place of Peace</a>  
+                    <a href="discoverfood.html" class="nav-button">Discover Food </a> 
+                    <a href="discovertransport.html" class="nav-button">Discover Transportation </a>
+                    <a href="about.html" class="nav-button">About</a>
+                    <a href="contact.html" class="nav-button">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Marquee -->
+        <div class="marquee">
+            <p> بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ      ادْخُلُوهَا بِسَلَامٍ آمِنِينَ     صدق الله العظيم. </p>
+
+        </div>
+
+        <section class="discover-container">
+            <div class="discover-card">
+                <img src="images/cairo.jpg" alt="Cairo">
+                <div class="discover-card-content">
+                    <h3>Cairo</h3>
+                    <p>Discover the vibrant city of Cairo, home to the iconic Pyramids of Giza and a rich cultural heritage.</p>
+                    <button onclick="window.location.href='cairo.html'">Learn More</button>
+                </div>
+            </div>
+            <div class="discover-card">
+                <img src="/images/alexandria.jpg" alt="Alexandria">
+                <div class="discover-card-content">
+                    <h3>Alexandria</h3>
+                    <p>Explore the Mediterranean city of Alexandria, known for its stunning beaches and ancient ruins.</p>
+                    <button onclick="window.location.href='alexandria.html'">Learn More</button>
+                </div>
+            </div>
+            <div class="discover-card">
+                <img src="images/elarish.jpg" alt="El Arish">
+                <div class="discover-card-content">
+                    <h3>El Arish</h3>
+                    <p>Visit the coastal city of El Arish, located in the Sinai Peninsula and known for its natural beauty.</p>
+                    <button onclick="window.location.href='elarish.html'">Learn More</button>
+                </div>
+            </div>
+            <div class="discover-card">
+                <img src="images/luxor.jpg" alt="Luxor">
+                <div class="discover-card-content">
+                    <h3>Luxor</h3>
+                    <p>Explore the ancient city of Luxor, home to the Valley of the Kings and numerous temples.</p>
+                    <button onclick="window.location.href='luxor.html'">Learn More</button>
+                </div>
+            </div>
+            <div class="discover-card">
+                <img src="images/aswan.jpg" alt="Aswan">
+                <div class="discover-card-content">
+                    <h3>Aswan</h3>
+                    <p>Discover the city of Aswan, situated along the Nile River and known for its stunning landscapes.</p>
+                    <button onclick="window.location.href='aswan.html'">Learn More</button>
+                </div>
+            </div>
+            <div class="discover-card">
+                <img src="images/dahab.jpg" alt="Dahab">
+                <div class="discover-card-content">
+                    <h3>Dahab</h3>
+                    <p>Visit the laid-back town of Dahab, known for its beautiful beaches and excellent diving and snorkeling opportunities.</p>
+                    <button onclick="window.location.href='dahab.html'">Learn More</button>
+                </div>
+            </div>
+            <div class="discover-card">
+                <img src="images/stcatherine.jpg" alt="St. Catherine">
+                <div class="discover-card-content">
+                    <h3>St. Catherine</h3>
+                    <p>Explore the town of St. Catherine, home to the famous St. Catherine's Monastery and stunning natural landscapes.</p>
+                    <button onclick="window.location.href='stcatherine.html'">Learn More</button>
+                </div>
+            </div>
+            <div class="discover-card">
+                <img src="images/sharmelshiekh.jpg" alt="Sharm El-Sheikh">
+                <div class="discover-card-content">
+                    <h3>Sharm El-Sheikh</h3>
+                    <p>Discover the resort town of Sharm El-Sheikh, known for its beautiful beaches, clear waters, and world-class diving.</p>
+                    <button onclick="window.location.href='sharmelshiekh.html'">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Email</button>
+        </form>
+    </div>
+    <div class="footer-info">
+        <div class="social-media">
+            <h4>Follow Us</h4>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.google.com/search?client=firefox-b-d&q=twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <p>&copy; 2025 Explore Egypt. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

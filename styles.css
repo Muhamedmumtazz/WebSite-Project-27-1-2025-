@@ -1,0 +1,328 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/first.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    display: flex;               /* Added flexbox layout */
+    flex-direction: column;      /* Aligns content vertically */
+    min-height: 100vh;   
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(46, 45, 45, 0.9);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    max-height: 50px;
+}
+
+nav .nav-buttons {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-button {
+    color: #fffffff3;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #ff3c00;
+    color: #ffffff;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #ff2600;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section {
+    background-color: rgba(28, 28, 28, 0.8);
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    text-align: center;
+}
+
+section#home {
+    border: 2px solid #ff2600;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Discover Page Styles */
+.discover-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 40px;
+    margin: 40px auto;
+    max-width: 1400px;
+}
+
+.discover-card {
+    background-color: rgba(28, 28, 28, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+}
+
+.discover-card:hover {
+    transform: translateY(-5px);
+}
+
+.discover-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.discover-card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.discover-card h3 {
+    color: #ff2600;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.discover-card p {
+    font-size: 1.4em;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.discover-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.discover-card a:hover {
+    color: #0056b3;
+}
+
+/* Discover Button Section */
+.discover-card-content button,
+.discover-button {
+    background-color: rgb(255, 60, 0);
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.3em;
+    transition: background-color 0.3s ease, transform 0.3s;
+    margin-top: 20px;
+    display: inline-block;
+    border-color: rgb(255, 60, 0);
+}
+
+.discover-button:hover {
+    background-color: rgba(173, 44, 4, 0.822);
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(58, 56, 56, 0.9);
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+footer .newsletter {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer .newsletter h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+footer .newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer .newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 500px;
+    max-width: 100%;
+}
+
+footer .newsletter button {
+    background-color: #ff2600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer .newsletter button:hover {
+    background-color: #b33300;
+}
+
+footer .footer-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 5px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .footer-info > div {
+    flex: 1 1 200px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+footer .footer-info h4 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #a52514;
+}
+
+footer .footer-info a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+footer .footer-info a:hover {
+    color: #ff3c00;
+}
+
+footer .social-media {
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer .social-media h4 {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    color: #ffffff;
+    font-size: 1.9em;
+    margin: 0 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #ff3c00;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: rgb(255, 60, 0); /* Set the text color to orange */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .discover-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Home1 Section Styles - Top-Left Position */
+section#home1 {
+    background-color: rgba(28, 28, 28, 0.9); /* Semi-transparent dark background */
+    border: 2px solid #ff2600; /* Red border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the section */
+    max-width: 800px; /* Limit width for better readability */
+    text-align: center; /* Align text to the left */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    position: absolute; /* Position absolutely within the parent */
+    top: 100px; /* Distance from the top of the page */
+    z-index: 10; /* Ensure it stays above other content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+section#home1:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+section#home1 h2 {
+    color: #ff2600; /* Red color for the heading */
+    font-size: 2em; /* Larger font size */
+    margin-bottom: 15px; /* Space below the heading */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Add spacing between letters */
+}
+
+section#home1 p {
+    color: #ffffff; /* White text color */
+    font-size: 1.1em; /* Slightly larger font size */
+    line-height: 1.6; /* Increased line height for better readability */
+    margin-bottom: 0; /* Remove bottom margin */
+}
